@@ -8,6 +8,9 @@ puts 'Para o cálculo de gordura por pessoa, digite: "cgp".'
 programa = gets.chomp
 
 case programa
+
+                                    #PARTE TMB
+
 when "tmb"
   puts "*************** Sua Taxa de Metabolismo Basal ***************"
   puts "ALERT: PROIBIDO VIADO"
@@ -36,6 +39,9 @@ when "tmb"
   else
     puts "Opção de sexo inválida."
   end
+
+                                          #PARTE CPP
+
 when "cpp"
   puts "*************** CÁLCULO DE PROTEÍNA P/ CD PESSOA ***************"
   print "Você está em bullking(b) ou cutting(c)?: "
@@ -52,6 +58,8 @@ when "cpp"
     print "Você precisa consumir #{resultadoProteinas2} proteínas p/ dia."
     end
 
+                                        #PARTE CCP
+
 when "ccp"
   puts "*************** CÁLCULO DE CARBOIDRATOS P/ CD PESSOA ***************"
   print "Você está em bullking(b) ou cutting(c)?: "
@@ -67,6 +75,8 @@ when "ccp"
     resultadoCarbo2 = 1.8 * pesoCarbo2
     print "Você precisa consumir #{resultadoCarbo2} carboidratos p/ dia."
   end
+
+                                      #PARTE CGP
 
 when "cgp"
   puts "*************** CÁLCULO DE GORDURA P/ CD PESSOA ***************"
